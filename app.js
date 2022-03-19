@@ -13,7 +13,7 @@ app.listen(PORT, () => {
 app.use(express.json())
 app.use(express.urlencoded({ extended: true }))
 
-app.set('view engine', 'ejs')
+app.set('view engine', 'pug')
 app.set('views', __dirname + '/src/Views/Layouts')
 
 app.get('/products', (req, res) => {
