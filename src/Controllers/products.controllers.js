@@ -1,8 +1,8 @@
 import { createRequire } from 'module'
 const require = createRequire(import.meta.url)
-const products = require('../assets/products.json')
+export const products = require('../assets/products.json')
 
-const getMaxId = () => {
+export const getMaxId = () => {
   let maxId = 0
   products?.forEach(product => {
     if (product.id > maxId) {
